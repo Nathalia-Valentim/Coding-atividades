@@ -1,0 +1,1 @@
+print(f"Cada aluno receberá: {70//30}.", f"Cada aluno receberá: {70%30}.")

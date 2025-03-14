@@ -1,0 +1,1 @@
+print("Senha inválida".replace("inválida","válida"))
