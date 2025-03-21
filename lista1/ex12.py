@@ -8,6 +8,12 @@ soma, subtração, multiplicação e divisão inteira dos números.
 num1 = float(input("Digite o primeiro número: "))
 num2 = float(input("Digite o segundo número: "))
 
+'''
+if num2 == 0:
+    print("Não é possível realizar a divisão por zero!")
+    print("Informe um número diferente de zero e tente novamente")
+'''
+
 soma = num1 + num2
 subtracao = num1 - num2
 multiplicacao = num1 * num2
