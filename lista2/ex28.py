@@ -7,3 +7,7 @@ promoção".
 
 # Solução
 preco = float(input("Digite o preço do produto: "))
+produto_estoque = input("O produto está em estoque: ").lower()
+
+if preco < 50 and produto_estoque == "sim":
+    print("Produto em promoção")

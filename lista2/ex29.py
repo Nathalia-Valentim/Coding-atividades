@@ -6,3 +6,8 @@ participar do sorteio".
 '''
 
 # Solução
+idade = int(input("Digite sua idade: "))
+sorteio = input("Já participou de um sorteio: ").lower()
+
+if idade >= 18 and sorteio == "não":
+    print("Pode participar do sorteio")
