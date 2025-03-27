@@ -6,3 +6,10 @@ permitido".
 '''
 
 # Solução
+idade = int(input("Digite sua idade: "))
+documento = input("Possui documento?: ").lower()
+
+if idade >= 18 and documento == "sim":
+    print("Acesso permitido")
+else: 
+    print("Acesso negado")

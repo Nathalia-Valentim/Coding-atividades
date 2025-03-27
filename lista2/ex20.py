@@ -6,3 +6,10 @@ votar".
 '''
 
 # Solução
+idade = int(input("Digite sua idade: "))
+impedimento = input("Possui impedimento para votar?: ").lower()
+
+if idade >= 16 and impedimento == "não":
+    print("Pode votar")
+else:
+    print("Não pode votar")
