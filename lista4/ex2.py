@@ -10,6 +10,3 @@ entrada = ""
 
 while entrada != palavra_correta:
     entrada = input("Digite a palavra 'seguro': ").lower()
-
-    if entrada == palavra_correta:
-        print("Você digitou correto")

@@ -5,3 +5,8 @@ regressiva até 0.
 '''
 
 # Solução
+numero = int(input("Digite um número inteiro para a contagem regressiva: "))
+
+while numero >= 0:
+    print(numero)
+    numero -= 1

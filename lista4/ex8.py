@@ -5,3 +5,11 @@ deseja ver essa frase. Use while para exibir a frase o número de vezes solicita
 '''
 
 # Solução
+frase = input("Digite uma frase: ")
+vezes = int(input("Quantas vezes você deseja ver a frase? "))
+ 
+repetir = 0
+ 
+while repetir < vezes:
+    print(frase)
+    repetir = repetir + 1

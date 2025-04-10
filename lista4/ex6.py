@@ -6,3 +6,12 @@ total é exibida.
 '''
 
 # Solução
+total = 0
+numero = ""
+
+while numero != 0:
+    numero = int(input("Digite um número inteiro: "))
+    #total = total + numero 
+    total += numero
+else:
+    print(f"Total: {total}")

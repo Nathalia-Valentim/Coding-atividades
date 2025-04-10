@@ -6,9 +6,20 @@ for diferente de “sair”.
 '''
 
 # Solução
+frase = input("Dgite um texto: ").lower().strip()
+
+while frase != "sair":
+    print(f"Você digitou {texto}")
+    frase = input("Dgite um texto: ").lower().strip()
+
+
+
+
+'''
 while True: 
     texto = input("Digite um texto: ").lower()
     print(f"Você digitou {texto}")
 
     if texto == "sair":
         break
+'''
