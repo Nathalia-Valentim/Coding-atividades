@@ -13,3 +13,13 @@ repetir = 0
 while repetir < vezes:
     print(frase)
     repetir = repetir + 1
+
+
+'''
+frase = input("Digite uma frase: ")
+vezes = int(input("Quantas vezes você deseja ver a frase? "))
+
+while vezezs > 0:
+    print(frase
+    vezes = vezes - 1
+'''
