@@ -14,7 +14,7 @@ while numero_digitado != "desisto":
     numero_digitado = input("Tente adivinhar oo número: ")
 
     if numero_digitado == "desisto":
-        print("Que pena")
+        print(f"Você desistiu. O número era {numero_correto}")
         break
     elif numero_digitado < numero_correto:
         print("Tente um número maior")

@@ -5,3 +5,7 @@ Exiba os números pares entre 1 e 50 (inclusive). Use continue para ignorar os
 '''
 
 # Solução
+for imprimir in range(1, 51):
+    if imprimir % 2 != 0:
+        continue
+    print(imprimir)

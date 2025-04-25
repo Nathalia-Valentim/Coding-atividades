@@ -5,3 +5,5 @@ número. Dica: Use range(10, 0, -1).
 '''
 
 # Solução
+for contagem_regressiva in range(10, 0, -1):
+    print(contagem_regressiva)

@@ -5,3 +5,6 @@ imprima-a.
 '''
 
 # Solução
+lista = []
+
+print(lista)

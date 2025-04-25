@@ -9,3 +9,15 @@ deve somar todos os pares entre 20 e 80, incluindo o 20 e o 80.
 '''
 
 # Solução
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+
+inicio = min(num1, num2)
+fim = max(num1, num2)
+
+soma = 0
+for i in range(inicio, fim + 1):
+    if i % 2 == 0:
+        soma += i
+
+print(f"Soma dos pares entre {inicio} e {fim} = {soma}")

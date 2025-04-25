@@ -5,3 +5,7 @@ por 'uva' e exiba a lista atualizada.
 '''
 
 # Solução
+frutas = ['maçã', 'banana', 'laranja']
+
+frutas[1] = 'uva'
+print(frutas)

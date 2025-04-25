@@ -6,8 +6,8 @@ usuário digitou na tela, o número de vezes que ele informou.
 '''
 
 # Solução
-frase = input("Digite a frase: ")
-qnt_vezes = int(input("Quantas vezes: "))
+frase = input("Digite uma frase: ")
+qnt_vezes = int(input("Quantas vezes quer repitir essa frase? "))
 
 for contador in range(0, qnt_vezes):
     print(frase)
