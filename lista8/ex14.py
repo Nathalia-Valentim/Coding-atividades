@@ -11,5 +11,5 @@ for _ in range(3):
     cadastro["nomes"].append(input("Nome: "))
     cadastro["idades"].append(int(input("Idade: ")))
     cadastro["cidades"].append(input("Cidade: "))
-    
+
 print(cadastro)

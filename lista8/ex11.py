@@ -10,9 +10,9 @@ cidade = int(input("Digite sua cidade: "))
 
 dados = {"nome": nome, "cidade": cidade}
 
-atualizar = input("Deseja atualizar a cidade?(s/n) ")
+atualizar = input("Deseja atualizar a cidade?(s/n) ").lower()
 
-if atualizar.lower() == "sim" or atualizar == "s":
+if atualizar == "sim" or atualizar == "s":
     dados["cidade"] = input("Nova cidade: ")
 
 print(dados)
