@@ -5,3 +5,24 @@ Média de Notas
 '''
 
 # Solução
+alunos = []
+notas = []
+
+turma = int(input("Quantos alunos existem na turma M? "))
+
+for _ in range(turma):
+    alunos.append(input("Nome do aluno: "))
+
+for _ in range(turma):
+    notas.append(float(input("Nota do aluno: ")))
+
+for nome, nota in zip(alunos, notas):
+    print(f"{nome} -> {nota}")
+
+soma = 0
+
+for nota in notas:
+    soma += nota
+
+media = soma / len(notas)
+print(f"Média das notas: {media}")

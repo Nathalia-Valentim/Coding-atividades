@@ -7,3 +7,14 @@ exiba.
 '''
 
 # Solução
+compras1 = []
+compras2 = []
+
+for _ in range(int(input("Quantos itens na lista 1? "))):
+    compras1.append(input("Item: "))
+
+for _ in range(int(input("Quantos itens na lista 2? "))):
+    compras2.append(input("Item: "))
+
+compras_totais = list(set(compras1 + compras2))
+print("Lista final:", compras_totais)

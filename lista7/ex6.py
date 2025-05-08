@@ -8,13 +8,13 @@ append() em compras.
 
 # Solução
 compras = []
-n = int(input("Quantos itens deseja adicionar? "))
+n = int(input("Quantos itens você deseja adicionar? "))
 
 for _ in range(n):
-    item = input("Digite o item: ")
+    item = input("Digite o item que quer adicionar: ")
     compras.append(item)
 
-print("## Sua lista de compras ##")
+print("=> Sua lista de compras <=")
 
 for item in compras:
     print("- ", item)

@@ -8,7 +8,6 @@ e uma lista numerada com esses nomes.
 
 # Solução
 nomes = []
-
 aluno = input("Digite o nome do aluno (ou entre para sair): ")
 
 while aluno != "":

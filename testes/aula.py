@@ -95,13 +95,13 @@ print("")
 #
 
 try:
-   num1 = int(input("Digite o primeiro número: "))
-   num2 = int(input("Digite o segund número: "))
+  num1 = int(input("Digite o primeiro número: "))
+  num2 = int(input("Digite o segund número: "))
    
-   resultado = num1 / num2
+  resultado = num1 / num2
 except ZeroDivisionError:
-   print("Não é possível dividir por zero")
+  print("Não é possível dividir por zero")
 except ValueError:
-   print("Informe apenas números inteiros")
+  print("Informe apenas números inteiros")
 else:
-   print(resultado)
+  print(resultado)

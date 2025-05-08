@@ -8,9 +8,17 @@ consoantes (letras alfabeticamente mas não vogais) existem.
 '''
 
 # Solução
-numero = float(input("Digite um número: "))
+frase = input("Digite uma frase: ").lower()
+vogais = "aeiou"
+consoantes = "bcdfghjklmnpqrstvwxyz"
 
-if numero >= 10 and numero <= 20:
-    print("Número no intervalo")
-else:
-    print("Número fora do intervalo")
+cont_vogais = 0
+cont_consoantes = 0
+
+for char in frase:
+    if char in vogais:
+        cont_vogais += 1
+    elif char in consoantes:
+        cont_consoantes += 1
+
+print(f"Vogais: {cont_vogais}, Consoantes: {cont_consoantes}")

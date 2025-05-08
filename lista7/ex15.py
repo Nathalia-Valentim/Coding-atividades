@@ -13,3 +13,22 @@ usando o método extend().
 '''
 
 # Solução
+convidados_A = []
+convidados_B = []
+
+nA = int(input("Quantos conivdados vão ao Workshop A?: "))
+for _ in range(nA):
+    convidadoA = input("Nomes dos convidados A: ")
+    convidados_A.append(convidadoA)
+
+nB = int(input("Quantos conivdados vão ao Workshop B?: "))
+for _ in range(nB):
+    convidadoB = input("Nomes dos convidados A: ")
+    convidados_B.append(convidadoB)
+
+todos_convidados = []
+todos_convidados.extend(convidados_A)
+todos_convidados.extend(convidados_B)
+
+for i, nome in enumerate(todos_convidados, 1):
+    print(f"{i}. {nome}")

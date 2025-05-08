@@ -12,8 +12,8 @@ um dos nomes válidos (definidos na lista do item 1).
 “nulo”, ou seja, não será contabilizado na votação final. Digitou
 errado, perdeu o voto.
     5. Ao final, percorra a lista de candidatos e use o método count() em
-votos para exibir quantos votos cada um dos três candidatos
-recebeu.
+votos para exibir quantos votos cada um dos três candidatos recebeu.
+
     Exemplo de execução:
     Quantos votos serão computados? 7
     Digite o voto #1: Alice
@@ -32,3 +32,18 @@ recebeu.
 '''
 
 # Solução
+candidatos = ["Alice", "Bruno", "Camila"]
+votos = []
+
+votos_totais = int(input("Quantos votos serão computados? "))
+
+for i in range(votos_totais):
+    voto = input(f"Digite o voto #{i+1}: ")
+    if voto in candidatos:
+        votos.append(voto)
+    else:
+        print("Candidato inválido, voto será anulado.")
+
+print("Resultado:")
+for nome in candidatos:
+    print(f"{nome}: {votos.count(nome)}")

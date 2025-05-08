@@ -7,3 +7,12 @@ imprima a lista de tarefas como no exemplo:
 '''
 
 # Solução
+tarefas = []
+n_tarefas = int(input("Quantas tarefas você tem hoje? "))
+
+for _ in range(n_tarefas):
+    tarefa = input("Qual a próxima tarefa? ")
+    tarefas.append(tarefa)
+
+for i in range(len(tarefas)):
+    print(f"Tarefa {i + 1}: {tarefas[i]}")
