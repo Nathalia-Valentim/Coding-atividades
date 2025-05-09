@@ -4,6 +4,6 @@ cores.
 '''
 
 # Solução
-cores = ["vermelho", "verde", "azul", "amarelo"]
+cores = ("vermelho", "verde", "azul", "amarelo")
 
 print(cores[1])

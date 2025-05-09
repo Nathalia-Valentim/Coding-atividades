@@ -4,7 +4,7 @@ maiúsculas, um por linha.
 '''
 
 # Solução
-semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+semana = ("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado")
 
 for dia in semana:
     print(dia.upper())

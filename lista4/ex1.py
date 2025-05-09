@@ -9,11 +9,8 @@ for diferente de “sair”.
 frase = input("Dgite um texto: ").lower().strip()
 
 while frase != "sair":
-    print(f"Você digitou {texto}")
+    print(f"Você digitou {frase}")
     frase = input("Dgite um texto: ").lower().strip()
-
-
-
 
 '''
 while True: 

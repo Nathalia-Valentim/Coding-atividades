@@ -4,6 +4,6 @@ números.
 '''
 
 # Solução
-numeros = [10, 20, 30, 40, 50]
+numeros = (10, 20, 30, 40, 50)
 
 print(sum(numeros))

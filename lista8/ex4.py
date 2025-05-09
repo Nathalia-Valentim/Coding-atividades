@@ -4,7 +4,7 @@ usuário está presente na tupla.
 '''
 
 # Solução
-nomes = ["Fred", "Daphne", "Velma", "Salsicha", "Scooby"]
+nomes = ("Fred", "Daphne", "Velma", "Salsicha", "Scooby")
 busca = input("Digite um nome e descubra se está na lista: ")
 
 if busca in nomes:
