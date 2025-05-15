@@ -19,3 +19,10 @@ total = 0
 for num in calculo:
     total = total + num
 print(total)
+
+#
+
+alunos = [Fred, Daphne, Velma, Salsicha, Scooby]
+
+alunos.sort(reverse = True)
+print(alunos)
