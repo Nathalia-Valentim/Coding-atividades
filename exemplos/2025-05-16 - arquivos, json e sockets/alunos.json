@@ -1,0 +1,10 @@
+{
+  "RM1234": {
+    "nome": "Elvis",
+    "nascimento": "2000-01-25"
+  },
+  "RM1235": {
+    "nome": "João",
+    "nascimento": "2001-02-12"
+  }
+}
