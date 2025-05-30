@@ -11,7 +11,8 @@ palavra2 = input("Digite uma palavra: ")
 print(f"{palavra1} {palavra2}")
 
 
-"""
-resultado = palavra1 + " " + palavra2
-print(resultado)
-"""
+# Solução do professor
+palavra1 = input("Digite a primeira palavra: ")
+palavra2 = input("Digite a segunda palavra: ")
+
+print(f"{palavra1} {palavra2}")

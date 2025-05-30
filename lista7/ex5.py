@@ -21,3 +21,21 @@ pos = 1
 for elem in nomes:
     print(f"{pos} - {elem}")
     pos += 1
+
+
+# Solução do professor
+nomes = []
+
+aluno = input("Digite o nome do aluno: ")
+
+while aluno:
+  nomes.append(aluno)
+  aluno = input("Digite o nome do aluno: ")
+  
+print(f"Foram digitados {len(nomes)} nomes")
+
+pos = 1
+
+for elem in nomes:
+  print(f"{pos} - {elem}")
+  pos += 1

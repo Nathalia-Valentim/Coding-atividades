@@ -13,5 +13,7 @@ if tempo == "ensolarado":
     print("Dia perfeito para sair")
 elif tempo == "chuvoso":
     print("Leve um guarda-chuva")
+elif tempo == "nublado":
+    print("Bora maratonar alguma série")
 else: 
     print("Aproveite o dia!")

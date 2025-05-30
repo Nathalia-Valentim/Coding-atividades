@@ -9,6 +9,7 @@ numero = float(input("Digite um numero qualquer: "))
 print(f"O valor absoluto de {numero} é {abs(numero)}")
 
 
+# Solução do professor
 numero_str = input("Digite um numero: ")
 numero = int(numero_str)
 numero_abs = abs(numero)

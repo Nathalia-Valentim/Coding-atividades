@@ -32,18 +32,19 @@ votos para exibir quantos votos cada um dos três candidatos recebeu.
 '''
 
 # Solução
+num_votos = int(input("Quantos votos serão computados? "))
 candidatos = ["Alice", "Bruno", "Camila"]
 votos = []
 
-votos_totais = int(input("Quantos votos serão computados? "))
-
-for i in range(votos_totais):
-    voto = input(f"Digite o voto #{i+1}: ")
-    if voto in candidatos:
-        votos.append(voto)
-    else:
-        print("Candidato inválido, voto será anulado.")
-
+for i in range(num_votos):
+    nome_voto = input(f"Digite o voto #{i}: ")
+  
+    if nome_voto in candidatos:
+        votos.append(nome_voto)
+    else:  
+     print("Candidato inválido, voto será anulado.")
+  
 print("Resultado:")
-for nome in candidatos:
-    print(f"{nome}: {votos.count(nome)}")
+
+for candidato in candidatos:
+    print(f"{candidato}: {votos.count(candidato)}")

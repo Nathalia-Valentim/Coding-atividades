@@ -11,3 +11,12 @@ if not texto:
     print("Nenhum texto digitado")
 else:
     print("Texto recebido")
+
+
+# Solução do professor
+texto = input("Digite um texto (ou não :)) ")
+
+if texto == "":
+  print("Nenhum texto digitado")
+else:
+  print("Texto recebido")

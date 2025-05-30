@@ -8,7 +8,10 @@ fim com .strip() e mostre o tamanho da frase usando len().
 frase = input("Digite uma frase: ")
 print(len(frase.strip()))
 
+
+# Solução do professor
 frase = input("Digite uma frase: ")
 frase_sem_espaco = frase.strip()
+
 caracteres = len(frase_sem_espaco)
 print(caracteres)

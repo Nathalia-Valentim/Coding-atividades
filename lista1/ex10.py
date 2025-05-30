@@ -14,6 +14,7 @@ palavra = input("Digite uma palavra: ").lower()
 print(palavra in frase)
 
 
+# Solução do professor
 frase = "Coding for cybersecurity, do curso de defesa cibernética na FIAP"
 frase_minusculas = frase.lower()
 

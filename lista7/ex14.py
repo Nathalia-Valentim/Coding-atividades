@@ -12,7 +12,7 @@ lista = list(palavra)
 contador = 0
 
 for letra in lista:
-    if letra == 'a':
+    if letra.lower() == 'a':
         contador += 1
 
 print(f"Ocorrências da letra 'a': {contador}")

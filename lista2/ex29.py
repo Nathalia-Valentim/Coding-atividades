@@ -11,3 +11,5 @@ sorteio = input("Já participou de um sorteio: ").lower()
 
 if idade >= 18 and sorteio == "não":
     print("Pode participar do sorteio")
+else:
+    print("Não pode participar do sorteio")

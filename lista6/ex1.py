@@ -17,16 +17,18 @@ cont_consoantes = 0
 cont_maiusculas = 0
 cont_minusculas = 0
 
-for char in frase:
-    if char.isalpha():
-        if char in vogais:
-            cont_vogais += 1
-        elif char in consoantes:
-            cont_consoantes += 1
-        if char.isupper():
-            cont_maiusculas += 1
-        elif char.islower():
-            cont_minusculas += 1
+for letra in frase:
+    if letra in vogais or letra in vogais.upper():
+        n_vogais += 1
+  
+    if letra in consoantes or letra in consoantes.upper():
+        n_consoantes += 1
+    
+    if letra.islower():
+        n_minusculas += 1
+    
+    if letra.isupper():
+        n_maiusculas += 1
 
 print(f"Vogais: {cont_vogais}")
 print(f"Consoantes: {cont_consoantes}")

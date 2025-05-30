@@ -15,3 +15,14 @@ while numero != 0:
     total += numero
 else:
     print(f"Total: {total}")
+
+
+# Solução do professor
+total = 0
+num = -1
+
+while num != 0:
+  num = int(input("Informe um número para ser somado: "))
+  total += num
+  
+print(f"Total: {total}")

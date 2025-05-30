@@ -5,10 +5,7 @@ quantos caracteres esse nome possui.
 '''
 
 # Solução
-nome = input("Digite seu nome: ")
+nome = input("Digite seu nome: ").strip()
 comprimento_nome = len(nome)
 
 print(f"O nome {nome} possui {comprimento_nome} caracteres.")
-
-nome = input("Digite seu nome: ")
-print(len(nome))

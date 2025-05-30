@@ -10,12 +10,10 @@ programa.
 '''
 
 # Solução
-while True:
-    palavra = input("Digite uma palavra: ")
- 
-    if palavra == "":
-        continue
-    elif palavra == "fim":
-        break
-    else:
-        print(palavra.upper())
+palavra = ""
+
+while palavra != "fim":
+  palavra = input("Digite uma palavra: ")
+  
+  if palavra and palavra != "fim":
+    print(palavra.upper())

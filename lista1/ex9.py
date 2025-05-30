@@ -9,6 +9,7 @@ frase = input("Digite uma frase: ")
 print(f"Os primeiros caracteres são: {frase[0:6]}")
 
 
+# Solução do professor
 frase = input("Digite uma frase: ")
 primeiros_caracteres = frase[0:6]
 

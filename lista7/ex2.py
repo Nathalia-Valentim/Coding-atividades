@@ -8,5 +8,7 @@ Acessando Elementos
 # Solução
 cores = ["vermelho", "verde", "azul", "amarelo", "preto"]
 
+itens_na_lista = len(cores)
+
 print(cores[0])
-print(cores[-1])
+print(cores[itens_na_lista-1])

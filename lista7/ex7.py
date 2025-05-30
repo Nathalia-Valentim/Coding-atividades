@@ -18,17 +18,14 @@ for _ in range(n_tarefas):
 for pos, item in enumerate(tarefas):
     print(f"{pos+1} - {item}")
 
-'''
+
+# Solução do professor
 tarefas = []
 n_tarefas = int(input("Quantas tarefas você tem hoje? "))
 
 for _ in range(n_tarefas):
-    tarefa = input("Qual a próxima tarefa? ")
-    tarefas.append(tarefa)
+  tarefa = input("Qual a próxima tarefa? ")
+  tarefas.append(tarefa)
 
-contador = 1
-
-for item in tarefas:
-    print(f"{contador} - {item}")
-    contador += 1
-'''
+for pos, item in enumerate(tarefas, start = 1):
+  print(f"{pos} - {item}")

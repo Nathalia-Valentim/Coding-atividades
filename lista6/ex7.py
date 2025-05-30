@@ -16,10 +16,33 @@ while numero_digitado != "desisto":
     if numero_digitado == "desisto":
         print(f"Você desistiu. O número era {numero_correto}")
         break
+
     elif numero_digitado < numero_correto:
         print("Tente um número maior")
+
     elif numero_digitado > numero_correto:
         print("Tente um número menor")
+
     else:
         print("Você acertou!")
         break
+
+
+# Solução do professor
+valor_correto = 45
+valor = 0
+
+while valor != valor_correto:
+  valor = input("Tente adivinhar o número: ")
+  
+  if valor == "desisto":
+    break
+  
+  valor = int(valor)
+  
+  if valor_correto > valor:
+    print("Tente um valor maior")
+  elif valor_correto < valor:
+    print("Tente um valor menor")
+else:
+  print("Você acertou!")

@@ -10,16 +10,25 @@ tarefas = []
 n_tarefas = int(input("Quantas tarefas você tem hoje? "))
 
 for _ in range(n_tarefas):
-    tarefa = input("Qual a próxima tarefa? ")
-    tarefas.append(tarefa)
+  tarefa = input("Qual a próxima tarefa? ")
+  tarefas.append(tarefa)
 
-for pos, item in enumerate(tarefas):
-    print(f"{pos+1} - {item}")
+for pos, item in enumerate(tarefas, start = 1):
+  print(f"{pos} - {item}")
+  
+## Até aqui o código é idêntico ao exercício 7.
 
-indice = int(input("Digite o índice da tarefa que deseja remover: ")) -1
+indice_remover = int(input("Informe o número da tarefa a ser removida: "))
 
-if 0 <= indice < len(tarefas):
-    t_removida = tarefas.pop(indice)
-    print(f"Tarefa removida: {t_removida}")
-else: 
-    print("Inválido")
+# O número da tarefa é sempre o índice mais um, portanto vamos remover um
+# do item da lista para remover o item correto.
+
+indice_remover -= 1
+
+# O índice informado será inválido se for maior ou igual ao tamaho da lista
+# ou se for negativo.
+if indice_remover >= len(tarefas) or indice_remover < 0:
+  print("Informe um índice válido.")
+else:
+  removido = tarefas.pop(indice_remover)
+  print("Item removido: ", removido)

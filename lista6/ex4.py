@@ -21,3 +21,32 @@ for i in range(inicio, fim + 1):
         soma += i
 
 print(f"Soma dos pares entre {inicio} e {fim} = {soma}")
+
+
+# Solução do professor
+num1 = int(input("Informe um número inteiro: "))
+num2 = int(input("Informe outro número inteiro: "))
+
+# Vamos inicializar a variável que vai armazenar a soma de todos os valores
+total = 0
+
+# Se o num2 for maior que num1, vamos inverter os valores
+# para atender à última parte do enunciado.
+# Durante o script, vamos trabalhar com as variáveis 'inicio' e 'fim',
+# e não com num1 e num2.
+if num1 <= num2:
+  inicio = num1
+  fim = num2
+else:
+  inicio = num2
+  fim = num1
+
+# Vamos criar um loop de 'inicio' até 'fim' (inclusive), e acumular
+# a soma na variável 'soma' se o número for par
+
+for num in range(inicio, fim+1):
+  
+  if not num % 2:
+    total += num
+
+print(f"A soma dos números pares entre {inicio} e {fim} é {total}")

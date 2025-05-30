@@ -10,3 +10,10 @@ entrada = ""
 
 while entrada != palavra_correta:
     entrada = input("Digite a palavra 'seguro': ").lower()
+
+
+# Solução do professor
+texto = input("Digite a palavra 'seguro': ")
+
+while texto != "seguro":
+  texto = input("Digite a palavra 'seguro': ")

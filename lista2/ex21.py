@@ -7,7 +7,7 @@ Solicite uma senha e, se ela contiver pelo menos um dos caracteres "!",
 # Solução
 senha = input("Digite uma senha: ")
 
-if "!" in senha or "@" in senha or "#" in senha and len(senha) > 10:
+if ("!" in senha or "@" in senha or "#" in senha) and len(senha) > 10:
     print("Senha forte")
 else: 
     print("Senha fraca")

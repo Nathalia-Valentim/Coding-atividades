@@ -8,13 +8,15 @@ Solicite a idade e classifique:
 '''
 
 # Solução
-idade = int(input("Digite sua idade: "))
+idade = int(input("Informe a idade: "))
 
-if idade < 12:
-    print("Criança")
-elif idade <= 17:
-    print("Adolescente")
-elif idade <= 64:
-    print("Adulto")
+if idade >= 0 and idade < 12:
+  print("Criança")
+elif idade >=12 and idade < 18:
+  print("Adolescente")
+elif idade >=18 and idade < 65:
+  print("Adulto")
+elif idade >= 65:
+  print("Idoso")
 else:
-    print("Idoso")
+  print("Que idade é essa??")

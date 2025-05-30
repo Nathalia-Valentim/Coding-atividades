@@ -7,14 +7,30 @@ exiba.
 '''
 
 # Solução
-compras1 = []
-compras2 = []
+lista1 = []
+lista2 = []
 
-for _ in range(int(input("Quantos itens na lista 1? "))):
-    compras1.append(input("Item: "))
+# Lendo itens da lista 1
+n = int(input("Quantos itens você vai comprar na lista 1? "))
 
-for _ in range(int(input("Quantos itens na lista 2? "))):
-    compras2.append(input("Item: "))
+for _ in range(n):
+  item = input("Qual o nome do item que você vai comprar? ")
+  lista1.append(item)
+  
+print('\n\n')
 
-compras_totais = list(set(compras1 + compras2))
-print("Lista final:", compras_totais)
+# Lendo itens da lista 2
+n = int(input("Quantos itens você vai comprar na lista 2? "))
+
+for _ in range(n):
+  item = input("Qual o nome do item que você vai comprar? ")
+  lista2.append(item)
+  
+# Mesclando as listas e removendo duplicatas
+compras_totais = []
+for item in lista1 + lista2:
+  if item not in compras_totais:
+    compras_totais.append(item)
+
+print("\nLista final de compras (sem duplicatas):")
+print(compras_totais)

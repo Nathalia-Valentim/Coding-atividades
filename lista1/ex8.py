@@ -8,9 +8,10 @@ caractere da palavra na posição indicada.
 palavra = input("digite uma palavra: ")
 numero = int(input("Digite um número: "))
 
-print(f"O caractere na posição {n} é: {palavra[numero]}")
+print(f"O caractere na posição {numero} é: {palavra[numero]}")
 
 
+# Solução do professor
 palavra = input("digite uma palavra: ")
 numero = int(input("Digite um número: "))
 

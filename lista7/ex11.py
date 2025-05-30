@@ -17,4 +17,7 @@ print("=> Sua lista de compras <=")
 for item in compras:
     print("- ", item)
 
-print(compras[:3])
+print("Exibindo os 3 primeiros itens da lista:")
+
+for item in compras[:3]:
+  print('-', item)

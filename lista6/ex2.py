@@ -9,3 +9,10 @@ for imprimir in range(1, 51):
     if imprimir % 2 != 0:
         continue
     print(imprimir)
+
+
+# Solução do professor
+for i in range(1, 51):
+    if i % 2:
+        continue
+    print(i)

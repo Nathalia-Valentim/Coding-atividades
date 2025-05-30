@@ -15,3 +15,11 @@ while numero_escolhido != numero_fixo:
         print("Acertou")
     else:
         print("Errou, tente novamente")
+
+
+# Solução do professor
+num_correto = "7"
+num_informado = input("Adivinhe um número: ")
+
+while num_informado != num_correto:
+  num_informado = input("Adivinhe um número: ")

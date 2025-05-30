@@ -9,7 +9,7 @@ dessas opções, continue perguntando.
 resposta = ""
 
 while resposta != "sim" or resposta != "não":
-    resposta = input("Você gosta de Python? (sim/não): ").lower().strip()
+    resposta = input("Você gosta de Python? (sim/não): ").lower().strip().replace("ã", "a")
 
     if resposta == "sim":
         print("Ótimo")
@@ -18,13 +18,13 @@ while resposta != "sim" or resposta != "não":
         print("Que pena")
         break
 
-'''
-while resposta != "sim" and resposta != "não":
-    resposta = input("Você gosta de Python? (sim/não): ").lower().strip()
-'''
 
-'''
+# Solução do professor
+while resposta != "sim" and resposta != "não":
+    resposta = input("Você gosta de Python? (sim/não): ").lower().strip().replace("ã", "a")
+
+
+
 while resposta not in ["sim", "não"]:
     resposta = input("Você gosta de Python? (sim/não): ")
     print(f"Você respondeu: {resposta}")
-'''

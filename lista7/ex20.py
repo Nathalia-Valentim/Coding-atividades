@@ -21,3 +21,21 @@ for item in itens:
 csv = csv[:-1]
 
 print(csv)
+
+
+# Solução do professor
+n = int(input("Quantos itens você vai digitar? "))
+itens = []
+
+for _ in range(n):
+  item = input("Informe um item: ")
+  itens.append(item)
+  
+# Construa uma única string separada por vírgulas sem usar join()
+itens_csv = ""
+for item in itens:
+  itens_csv += item + ","
+
+# Remove a última vírgula
+itens_csv = itens_csv[:-1]
+print(itens_csv)

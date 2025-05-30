@@ -15,10 +15,10 @@ consoantes = "bcdfghjklmnpqrstvwxyz"
 cont_vogais = 0
 cont_consoantes = 0
 
-for char in frase:
-    if char in vogais:
+for letra in frase:
+    if letra in vogais:
         cont_vogais += 1
-    elif char in consoantes:
+    elif letra in consoantes:
         cont_consoantes += 1
 
 print(f"Vogais: {cont_vogais}, Consoantes: {cont_consoantes}")

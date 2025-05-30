@@ -10,9 +10,9 @@ que 6 e a frequência maior que 75, exiba “Aprovado”.
 nota = int(input("Digite sua nota: "))
 frequencia = int(input("Digite sua frequência: "))
 
-if nota < 6 and frequencia >= 75:
+if nota < 6 and frequencia > 75:
     print("Faça a recuperação")
 elif nota < 6 and frequencia < 75:
     print("Repreovado")
-else:
+elif nota > 6 and frequencia > 75:
     print("Aprovado")

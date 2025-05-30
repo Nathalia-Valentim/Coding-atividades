@@ -13,7 +13,8 @@ if ano % 4 == 0 and (not ano % 100 == 0 or ano % 400 == 0):
 else:
     print("Não é bissexto")
 
-'''
+
+# Solução do professor
 ano = int(input("Informe uma ano para saber se ele é bissexto:"))
 
 divisivel_por_4 = ano % 4 == 0
@@ -22,4 +23,5 @@ divisivel_por_400 = ano % 400 == 0
 
 if divisivel_por_4 and (not divisivel_por_100 or divisivel_por_400):
     print("Ano bissexto")
-'''
+else:
+    print("Não é bissexto")

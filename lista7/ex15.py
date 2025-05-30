@@ -32,3 +32,27 @@ todos_convidados.extend(convidados_B)
 
 for i, nome in enumerate(todos_convidados, 1):
     print(f"{i}. {nome}")
+
+
+# Solução do professor
+nA = int(input("Quantos convidados vão ao Workshop A? "))
+convidados_A = []
+
+for _ in range(nA):
+  convidado = input("Informe o nome do convidado: ")
+  convidados_A.append(convidado)
+
+nB = int(input("Quantos convidados vão ao Workshop B? "))
+convidados_B = []
+
+for _ in range(nB):
+  convidado = input("Informe o nome do convidado: ")
+  convidados_B.append(convidado)
+  
+# O enunciado pede para usar o extend, então vamos copiar a lista A
+# para todos_convidados, para então usar o extend.
+todos_convidados = convidados_A.copy()
+todos_convidados.extend(convidados_B)
+
+for i in range(len(todos_convidados)):
+  print(f"{i+1} - {todos_convidados[i]}")
